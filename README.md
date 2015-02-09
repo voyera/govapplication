@@ -19,3 +19,9 @@ Rails gems:
 * Prod
 ** Devise
 ** Heroku gems (will_paginate)
+
+Todo
+
+* Add controller/model pour question/answers
+* Search field (concatenate question + answer)
+* 
