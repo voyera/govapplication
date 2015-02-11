@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208185019) do
+ActiveRecord::Schema.define(version: 20150209204104) do
+
+  create_table "items", force: true do |t|
+    t.text     "title"
+    t.text     "content"
+    t.text     "search"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "items", ["user_id", "created_at"], name: "index_items_on_user_id_and_created_at"
+  add_index "items", ["user_id"], name: "index_items_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

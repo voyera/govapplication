@@ -4,9 +4,11 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable
+  
+  has_many :items, dependent: :destroy
          
   def show
     @user = current_user
-    #get all question/answers
+    @items = @user.items.paginate(page: parems[:page])
   end
 end

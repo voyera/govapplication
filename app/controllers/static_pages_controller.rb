@@ -1,7 +1,9 @@
 class StaticPagesController < ApplicationController
   def home
     if user_signed_in?
-      # todo get all question/reponses
+      @user = current_user
+      @item = @user.items.build
+      @items = current_user.items.paginate(page: params[:page])
     end
   end
 

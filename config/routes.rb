@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   devise_scope :user do
     get "/login" => "devise/sessions#new"
-    get "/logout" => "devise/sessions#destroy"
+    delete "/logout" => "devise/sessions#destroy"
     get "/signup" => "devise/registrations#new"
   end
   
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   
-  resources :users, only: [:show]
+  resources :items,          only: [:create, :destroy]
 end
