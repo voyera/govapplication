@@ -1,4 +1,5 @@
-$(function() {
+var ready = function() {
+    
   // Show/hide buttons next to the item to Edit or Delete Item
   $("ol.items").on('mouseenter', 'li', function() {
     $( this ).find(".item_buttons").removeClass( "invisible" );
@@ -31,4 +32,9 @@ $(function() {
     $(this).parent().parent().slideUp('slow');
     $(this).parent().parent().parent().find(".item_text").hide().removeClass('hide').slideDown('slow');
   });
-});
+  
+};
+
+//fire with turbolinks
+$(document).ready(ready);
+$(document).on('page:load', ready);
