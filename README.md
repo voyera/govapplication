@@ -22,7 +22,7 @@ Easily search through existing questions/aswers.
 
 = Todo
 
-* Make turbolinks not screw up jquery document ready scripts ( https://github.com/kossnocorp/jquery.turbolinks )
+
 * Add Mangrill support for emails
 * Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
 * IL18n (translation fr)
@@ -42,3 +42,4 @@ Easily search through existing questions/aswers.
 * Add code to make edit button work (hide text, show edit form)
 * Add remote:true for edit form, and make it work
 * Add remote:true for add form, and make it work
+* Make turbolinks not screw up jquery document ready scripts
