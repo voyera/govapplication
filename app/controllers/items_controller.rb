@@ -6,18 +6,40 @@ class ItemsController < ApplicationController
   def create
     @item = current_user.items.build(item_params)
     if @item.save
-      flash[:success] = "Item created!"
+      respond_to do |format|
+        format.js
+      end
     else
-      flash[:danger] = "Item not created."
+      # handle errors
     end
-    
-    redirect_to root_url
+  end
+  
+  def update
+    @item = current_user.items.find(params[:id])
+    if @item.update_attributes(item_params)
+      respond_to do |format|
+        format.js
+      end
+    else
+      # handle errors
+    end
   end
 
   def destroy
     @item.destroy
-    flash[:success] = "Item deleted"
-    redirect_to request.referrer || root_url
+    
+    respond_to do |format|
+      format.js
+    end
+  end
+  
+  def edit
+    @item = current_user.items.find(params[:id])
+    @action = 'Edit' 
+    
+    respond_to do |format|
+      format.js
+    end
   end
   
   private

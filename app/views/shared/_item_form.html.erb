@@ -1,4 +1,9 @@
-<%= form_for(@item) do |f| %>
+<% 
+#if action isn't set, default to 'Add'
+@action ||= 'Add' 
+%>
+
+<%= form_for(@item, remote: true) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="form-group">
     <%= label_tag(:title, "Title") %>
@@ -8,6 +13,6 @@
     <%= label_tag(:content, "Content") %>
     <%= f.text_area :content, class: "form-control" %>
   </div>
-  <%= f.submit "Add", class: "btn btn-primary" %>
-  <%= f.submit "Cancel", class: "btn btn-danger" %>
+  <%= f.submit @action, class: "btn btn-primary" %>
+  <button type="button" class="btn btn-warning btn_cancel_item">Cancel</button>
 <% end %>

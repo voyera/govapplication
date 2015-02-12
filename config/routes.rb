@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   
-  resources :items,          only: [:create, :destroy]
+  resources :items,          only: [:create, :edit, :update, :destroy]
 end

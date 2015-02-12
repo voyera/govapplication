@@ -11,8 +11,9 @@
     <h1>My items (<%= @items.count %>)</h1>
     <section class="item_add">
       <%= render 'shared/item_form' %>
+      <button type="button" class="btn btn-primary btn-md btn-block btn_add_item">Add New Item</button>
     </section>
-    <ol class="items">
+    <ol class="items list-group">
       <%= render @items %>
     </ol>
     <%= will_paginate @items %>

@@ -1,0 +1,3 @@
+$("#item-<%= @item.id %> .item_form").html('<%= escape_javascript(render :partial => "shared/item_form") %>');
+$("#item-<%= @item.id %> .item_text").slideUp('slow');
+$("#item-<%= @item.id %> .item_form").hide().removeClass('hide').slideDown('slow');

@@ -1,13 +1,18 @@
-<li id="item-<%= item.id %>">
-  <span class="content"><%= item.content %></span>
-  <span class="title"><%= item.title %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(item.created_at) %> ago.
-  </span>
-  <span class="delete">
-    <% if current_user == (item.user) %>
-      <%= link_to "delete", item, method: :delete,
-                                       data: { confirm: "You sure?" } %>
-    <% end %>
-  </span>
+<li id="item-<%= item.id %>" class="list-group-item">
+  <div class="item_text">
+    <span class="title">
+      <%= item.title %>
+      <span class='item_buttons invisible'>
+      <% if current_user == (item.user) %>
+        <%= link_to "Edit", edit_item_path(item), remote: true,
+                                         class: 'btn btn-primary btn-xs btn_item_edit' %>
+        <%= link_to "Delete", item, method: :delete, remote: true,
+                                         data: { confirm: "You sure?" },
+                                         class: 'btn btn-danger btn-xs btn_item_delete' %>
+      <% end %>
+      </span>
+    </span>
+    <span class="content"><%= item.content %></span>
+  </div>
+  <div class="item_form hide"></div>
 </li>

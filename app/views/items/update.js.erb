@@ -1,0 +1,4 @@
+$("#item-<%= @item.id %> .item_text .title")[0].childNodes[0].nodeValue = '<%= escape_javascript(@item.title) %>';
+$("#item-<%= @item.id %> .item_text .content").html( '<%= escape_javascript(@item.content) %>' );
+$("#item-<%= @item.id %> .item_form").slideUp('slow');
+$("#item-<%= @item.id %> .item_text").hide().removeClass('hide').slideDown('slow');
