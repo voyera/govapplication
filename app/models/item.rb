@@ -11,6 +11,6 @@ class Item < ActiveRecord::Base
   
     #Concatenate title + content and remove accents
     def searchable_field
-       self.search = "#{title} #{content}".mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s
+       self.search = "#{title} #{content}".mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s.downcase
     end
 end

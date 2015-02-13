@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -29,6 +31,9 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+/* Form aligment */
+.item_search { margin: 5px 0; }
 
 /* typography */
 

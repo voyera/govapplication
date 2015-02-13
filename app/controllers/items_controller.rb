@@ -42,6 +42,16 @@ class ItemsController < ApplicationController
     end
   end
   
+  def search
+    @search_item = params[:search][:search_text].mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s.downcase
+    @search_item.gsub! /\s+/, '%'
+
+    @items = current_user.items.where("search LIKE ?", "%#{@search_item}%")
+    respond_to do |format|
+      format.js
+    end
+  end
+  
   private
 
     def item_params

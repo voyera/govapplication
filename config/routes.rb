@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   
   resources :items,          only: [:create, :edit, :update, :destroy]
+  post "search" => 'items#search'
 end

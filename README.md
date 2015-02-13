@@ -22,8 +22,6 @@ Easily search through existing questions/aswers.
 
 = Todo
 
-
-* Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
 * Test Mandrill emails
 * IL18n (translation fr)
 * Render error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
@@ -44,3 +42,4 @@ Easily search through existing questions/aswers.
 * Add remote:true for add form, and make it work
 * Make turbolinks not screw up jquery document ready scripts
 * Add Mangrill support for emails
+* Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
