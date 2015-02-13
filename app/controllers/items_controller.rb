@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_filter :authenticate_user!   
+  before_filter :authenticate_user!
   before_action :user_signed_in?, only: [:create, :destroy]
   before_action :correct_user,   only: :destroy
   
