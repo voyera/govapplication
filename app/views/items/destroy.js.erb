@@ -1,1 +1,3 @@
 $("#item-<%= @item.id %>").slideUp('slow');
+var count_items = $(".item_count").text();
+$(".item_count").html(parseInt(count_items)-1);

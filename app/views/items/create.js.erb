@@ -1,2 +1,4 @@
 $(".items").prepend('<%= escape_javascript(render @item) %>');
 $(".item_add form").trigger("reset");
+var count_items = $(".item_count").html();
+$(".item_count").html(parseInt(count_items)+1);

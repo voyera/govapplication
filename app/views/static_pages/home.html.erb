@@ -6,23 +6,20 @@
   </section>
 </aside>
 -->
-  <% if @items.any? %>
-    <h1>My items (<%= @items.count %>)</h1>
-    <section class="item_add">
-      <%= render 'shared/item_form' %>
-      <button type="button" class="btn btn-primary btn-md btn-block btn_add_item">Add New Item</button>
-    </section>
-    <section class="item_search">
-      <%= render 'shared/item_search_form' %>
-    </section>
-    <section class="item_list">
-    <ol class="items list-group">
-      <%= render @items %>
-    </ol>
-    <%= will_paginate @items %>
-    </section>
-  <% end %>
-
+  <h1>My items (<span class="item_count"><%= @items.count %></span>)</h1>
+  <section class="item_add">
+    <%= render 'shared/item_form' %>
+    <button type="button" class="btn btn-primary btn-md btn-block btn_add_item">Add New Item</button>
+  </section>
+  <section class="item_search">
+    <%= render 'shared/item_search_form' %>
+  </section>
+  <section class="item_list">
+  <ol class="items list-group">
+    <%= render @items %>
+  </ol>
+  <%= will_paginate @items %>
+  </section>
 <% else %>
 <div class="center jumbotron">
   <h1>Welcome to the Government Application App</h1>

@@ -22,7 +22,7 @@ Easily search through existing questions/aswers.
 
 = Todo
 
-* Test Mandrill emails
+* Make migration on heroku work
 * IL18n (translation fr)
 * Render error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
 
@@ -43,3 +43,4 @@ Easily search through existing questions/aswers.
 * Make turbolinks not screw up jquery document ready scripts
 * Add Mangrill support for emails
 * Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
+* Test Mandrill emails
