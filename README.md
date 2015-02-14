@@ -19,6 +19,7 @@ Easily search through existing questions/aswers.
 * Prod
 * * Devise
 * * Heroku gems (will_paginate)
+* * Puma web server
 
 = Todo
 

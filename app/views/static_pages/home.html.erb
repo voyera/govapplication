@@ -11,9 +11,11 @@
     <%= render 'shared/item_form' %>
     <button type="button" class="btn btn-primary btn-md btn-block btn_add_item">Add New Item</button>
   </section>
+  <% if @items.any? %>
   <section class="item_search">
     <%= render 'shared/item_search_form' %>
   </section>
+  <% end %>
   <section class="item_list">
   <ol class="items list-group">
     <%= render @items %>
