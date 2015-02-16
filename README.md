@@ -25,6 +25,11 @@ Easily search through existing questions/aswers.
 
 * IL18n (translation fr)
 * Render error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
+* Build tests for basic task
+* * Guest cannot add/edit/delete items
+* * Guest see home page
+* * Signed in user cannot edit/delete items that aren't his/hers
+* * Signed in user cannot access other user's item
 
 = Done
 
