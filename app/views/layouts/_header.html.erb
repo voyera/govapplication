@@ -1,14 +1,19 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Gov Application App", root_path, id: "logo" %>
+    <%= link_to t('app_title'), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav pull-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to t('home'), "/#{I18n.locale.to_s}/" %></li>
+        <li><%= link_to t('help'), help_path %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+          <li><%= link_to t('log_out'), destroy_user_session_path, method: "delete" %></li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+          <li><%= link_to t('log_in'), new_user_session_path %></li>
+        <% end %>
+        <% if I18n.locale.to_s == "en" %>
+          <li><%= link_to('Français', request.env['REQUEST_URI'].gsub("/en/", "/fr/")) %></li>
+        <% else %>
+          <li><%= link_to("English", request.env['REQUEST_URI'].gsub("/fr/", "/en/")) %></li>
         <% end %>
       </ul>
     </nav>

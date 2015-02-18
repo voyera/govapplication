@@ -1,18 +1,18 @@
 <% 
 #if action isn't set, default to 'Add'
-@action ||= 'Add' 
+@action ||= t('add')
 %>
 
 <%= form_for(@item, remote: true) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="form-group">
-    <%= label_tag(:title, "Title") %>
+    <%= f.label :title %>
     <%= f.text_field :title, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= label_tag(:content, "Content") %>
+    <%= f.label :content %>
     <%= f.text_area :content, class: "form-control" %>
   </div>
   <%= f.submit @action, class: "btn btn-primary" %>
-  <button type="button" class="btn btn-warning btn_cancel_item">Cancel</button>
+  <button type="button" class="btn btn-warning btn_cancel_item"><%= t('cancel') %></button>
 <% end %>

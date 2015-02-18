@@ -1,0 +1,69 @@
+fr:
+  activerecord:
+    attributes:
+      user:
+        current_password: Mot de passe actuel
+        email: Courriel
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi
+      item:
+        title: Titre
+        content: Contenu
+    models:
+      user: Utilisateur
+      item: Item
+  #Views translations
+  add: Ajouter
+  edit: Modifier
+  delete: Supprimer
+  confirm: Etes-vous certain?
+  cancel: Annuler
+  #footer
+  copyright: Une petite application Web fabriquée par Alexandre Voyer
+  about: À Propos
+  contact: Me rejoindre
+  #header
+  app_title: Mes applications au gouv
+  home: Accueil
+  help: Aide
+  log_in: Connecter
+  log_out: Déconnecter
+  #Search form
+  search_form_placeholder: Chercher mes items qui contiennent...
+  #About page
+  about_para1: "J'ai toujours eu l'impression que la création de la lettre de couverture était toujours une étape pénible."
+  about_para2: "Vous avez probablement un système comme le mien. Vous essayez de garder l'ensemble de vos applications a un endroit en pensant qu'un jour vous allez réutiliser les informations au besoin. Lorsque ce jour arrive, vous ne vous retrouvez plus dans vos vieilles applications et qu'arrive-t-il ensuite? Vous n'avez d'autre choix que de réécrire le tout pour la énième fois...Zzz Zzz Zzz"
+  about_head1: "J'ai créé cette application pour me simplifier la vie."
+  about_para3: "En ayant un endroit en ligne ou l'ensemble de mes réponses y sont et en adoptant une façon simple de s'y retrouver lorsque j'applique pour un poste au gouvernement."
+  about_para4: "Si cela vous attire, je vous invite a l'utiliser également."
+  about_head2: "Santé, et bonne chance avec votre application au gouvernement du Canada!"
+  #Contact
+  contact_para1: "Si vous voulez me rejoindre faite moi parvenir un courriel ici: alexandre.voyer a outlook.com."
+  #Help
+  help_para1: >
+    Une fois votre compte créé et votre adresse courriel confirmée connectez-vous en cliquant l'onglet du haut "Connecter". 
+    Vous aurez maintenant accès à votre page d'accueil personnalisée.
+  help_head1: "C'est là où la magie commence"
+  help_para2: >
+    Maintenant, vous pouvez cliquer le bouton "Ajout d'un nouvel item" qui vous laissera ajouter un item. 
+    Puisque les éléments d'une lettre de couverture ne sont pas toujours en format 
+    "Question / Réponse" j'ai gardé la formulation simple en utilisant les termes "Titre" et "Contenu".
+  help_para3: 'Simplement remplir ces deux champs du formulaire et appuyer sur le bouton "Enregistrer".'
+  help_head2: "C'est bien tout ça mais comment fait-on une recherche?"
+  help_para4: >
+    Lorsque vous avez plus d'un item, une barre de recherche apparaitra sur votre page principale. Simplement entrer un mot ou une partie de mot et appuyer sur le bouton "Go". 
+    Les résultats apparaitront automatiquement.
+  help_head3: Raccourci pour copier/coller le contenu
+  help_para5: >
+    Selectionner le contenu que vous souhaitez copier et appuyer sur les touches 
+    <kbd><kbd>Ctrl</kbd> + <kbd>C</kbd></kbd> (<kbd><kbd>Cmd</kbd> + <kbd>C</kbd></kbd> sur Mac) 
+    pour copier le texte et 
+    <kbd><kbd>Ctrl</kbd> + <kbd>V</kbd></kbd> (<kbd><kbd>Cmd</kbd> + <kbd>V</kbd></kbd> sur Mac) 
+    pour coller le texte dans votre document. Tadam!
+    
+  home_my_items: Mes items
+  home_add_item: Ajouter un nouvel item
+  home_head1: Bienvenue à votre outil de gestion d'applications au gouvernement
+  home_head2: Cet outil vise à vous aider à simplifier la tâche ardue de créer votre lettre de couverture pour plusieurs compétitions.
+  home_signup: Inscrivez-vous maintenant!

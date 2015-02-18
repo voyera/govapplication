@@ -35,7 +35,7 @@ class ItemsController < ApplicationController
   
   def edit
     @item = current_user.items.find(params[:id])
-    @action = 'Edit' 
+    @action = t('edit') 
     
     respond_to do |format|
       format.js

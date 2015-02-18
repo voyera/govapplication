@@ -18,6 +18,65 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        current_password: Current password
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        remember_me: Remember me
+      item:
+        title: Title
+        content: Content
+    models:
+      user: User
+      item: Item
+  #Views translations
+  add: Add
+  edit: Edit
+  delete: Delete
+  confirm: Are you sure?
+  cancel: Cancel
+  #footer
+  copyright: A small web app made by Alexandre Voyer
+  about: About
+  contact: Contact
+  #header
+  app_title: Gov Application App
+  home: Home
+  help: Help
+  log_in: Log In
+  log_out: Log Out
+  #Search form
+  search_form_placeholder: Search my items for...
+  #About page
+  about_para1: I always felt like the task of creating your cover letter for any government of Canada job was a very tedious job.
+  about_para2: "I believe that most have a system similar to mine... You try your best to backup your previous sumissions in case there is something useful in there that you can re-use in your future job applications. When that time comes, you can't figure out in which document you answered a question that is somewhat similar to the one you're filling out. Then what happens? You have to fill it out all over again... Boring, boring, boring."
+  about_head1: I created this small app to make my life easier.
+  about_para3: By creating an online place with everything I answered in previous applications and built something to make it easier for myself to retrieve the information I need when applying for a new job within the government.
+  about_para4: If this appeals to you, I invite it to use it as well.
+  about_head2: Cheers, and good luck with your government of Canada application!
+  #Contact
+  contact_para1: "If you want to contact me about this web application feel free to reach me at alexandre.voyer at outlook.com (I'm hoping that spam bots won't catch this!)."
+  #Help
+  help_para1: Once you create an account (and confirm its email address) and log in for the first time the home page will turn into your personnal page.
+  help_head1: This is where the magic happens
+  help_para2: >
+    There and then, you can click the "Add New Item" button which will let you add a new item. Since not everything in a cover letter 
+    is is the "question / answer" format I've kept the wording general by using "Title" and "Content".
+  help_para3: 'Simply fill those two fields and click the "Save" button.'
+  help_head2: This is cool but how to I search?
+  help_para4: "Once you have one item or more, a search bar will appear on your homepage. Type a word that is in either your title or content and see before your eyes your results show up."
+  help_head3: Copy and paste keyboard shortcut
+  help_para5: >
+    Simply select the paragraph you wish to copy and press <kbd><kbd>Ctrl</kbd> + <kbd>C</kbd></kbd> (<kbd><kbd>Cmd</kbd> + <kbd>C</kbd></kbd> on Mac) 
+    to copy and <kbd><kbd>Ctrl</kbd> + <kbd>V</kbd></kbd> (<kbd><kbd>Cmd</kbd> + <kbd>V</kbd></kbd> on Mac) to paste onto your document. Tada!
+  
+  home_my_items: My Items
+  home_add_item: Add New Item
+  home_head1: Welcome to the Government Application App
+  home_head2: This tool will hopefully make the tedious task of generating your cover letter for multiple competition a breeze.
+  home_signup: Sign up now!
+  

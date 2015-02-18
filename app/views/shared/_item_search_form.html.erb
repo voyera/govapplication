@@ -1,6 +1,6 @@
 <%= form_for :search, url: search_path, remote: true do |f| %>
 <div class="input-group">
-  <%= f.text_field :search_text, class: "form-control", placeholder: "Search my items for..." %>
+  <%= f.text_field :search_text, class: "form-control", placeholder: t('search_form_placeholder') %>
   <span class="input-group-btn">
     <%= f.submit "Go!", class: "btn btn-success" %>
   </span>

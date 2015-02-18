@@ -4,10 +4,10 @@
       <%= item.title %>
       <span class='item_buttons invisible'>
       <% if current_user == (item.user) %>
-        <%= link_to "Edit", edit_item_path(item), remote: true,
+        <%= link_to t('edit'), edit_item_path(item), remote: true,
                                          class: 'btn btn-primary btn-xs btn_item_edit' %>
-        <%= link_to "Delete", item, method: :delete, remote: true,
-                                         data: { confirm: "You sure?" },
+        <%= link_to t('delete'), item, method: :delete, remote: true,
+                                         data: { confirm: t('confirm') },
                                          class: 'btn btn-danger btn-xs btn_item_delete' %>
       <% end %>
       </span>
