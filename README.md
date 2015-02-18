@@ -1,4 +1,4 @@
-= Government application app
+# Government application app
 
 Primary goal is to store questions/answers to government applications. 
 
@@ -6,12 +6,12 @@ Also we need to allow people to register easily (Devise + OmniAuth (fb, google))
 
 Easily search through existing questions/aswers.
 
-= Technical requirements:
+## Technical requirements:
 
 * Ruby version 2.1.1.p76
 * Rails version 4.2.0.beta2
 
-= Rails gems:
+## Rails gems:
 
 * Development
 * * Faker (for testing)
@@ -20,18 +20,18 @@ Easily search through existing questions/aswers.
 * * Devise
 * * Heroku gems (will_paginate)
 * * Puma web server
+* * will_paginate
 
-= Todo
+## Todo
 
-* IL18n (translation fr)
-* Render error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
+* Render ajax error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
 * Build tests for basic task
 * * Guest cannot add/edit/delete items
 * * Guest see home page
 * * Signed in user cannot edit/delete items that aren't his/hers
 * * Signed in user cannot access other user's item
 
-= Done
+## Done
 
 * Implement Devise
 * Build seed data for testing
@@ -50,3 +50,4 @@ Easily search through existing questions/aswers.
 * Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
 * Test Mandrill emails
 * Make migration on heroku work
+* IL18n (translation fr)
