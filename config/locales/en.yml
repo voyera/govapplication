@@ -34,6 +34,7 @@ en:
       user: User
       item: Item
   #Views translations
+  base_title: Government Application App
   add: Add
   edit: Edit
   delete: Delete
