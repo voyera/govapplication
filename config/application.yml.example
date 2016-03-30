@@ -1,0 +1,4 @@
+production:
+  SENDGRID_USERNAME: username
+  SENDGRID_PASSWORD: as9das9asd9
+  HOST_NAME: somehostname.com

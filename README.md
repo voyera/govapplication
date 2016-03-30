@@ -8,19 +8,17 @@ Easily search through existing questions/aswers.
 
 ## Technical requirements:
 
-* Ruby version 2.1.1.p76
+* Ruby version 2.1.5
 * Rails version 4.2.0.beta2
 
 ## Rails gems:
 
-* Development
-** Faker (for testing)
+### Development
+* Faker (for testing)
 
-* Prod
-** Devise
-** Heroku gems (will_paginate)
-** Puma web server
-** will_paginate
+### Production
+* Heroku gems
+* Puma web server
 
 ## Heroku Demo (Feel free to use!)
 
@@ -29,6 +27,7 @@ http://govapplication.herokuapp.com/
 ## Implementation
 
 Ensure you have the following environment variable set: "SECRET_KEY_BASE" in production.
+You will also need to rename application.yml.example to application.yml and put your keys in there. As you can see I'm using sendgrid for since mandrill changed their TOS.
 
 ##Todo
 

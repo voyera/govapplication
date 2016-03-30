@@ -62,14 +62,17 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.smtp_settings = {
-  :address   => "smtp.mandrillapp.com",
-  :port      => 587,
-  :user_name => "alexandre.voyer@outlook.com",
-  :password  => "awGVF_YJVFLpgnsovKwYeg"
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => ENV['HOST_NAME'],
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
   
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'govapplication.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => ENV['HOST_NAME'] }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
