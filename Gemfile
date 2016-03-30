@@ -11,6 +11,7 @@ gem 'uglifier',             '2.5.3'
 gem 'coffee-rails',         '4.0.1'
 gem 'jquery-rails',         '3.1.2'
 gem 'turbolinks',           '2.3.0'
+gem 'jquery-turbolinks'
 gem 'jbuilder',             '2.1.3'
 gem 'rails-html-sanitizer', '1.0.1'
 gem 'sdoc',                 '0.4.0', group: :doc
@@ -29,5 +30,5 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma'
+  gem 'unicorn',        '4.8.3'
 end

@@ -14,40 +14,27 @@ Easily search through existing questions/aswers.
 ## Rails gems:
 
 * Development
-* * Faker (for testing)
+** Faker (for testing)
 
 * Prod
-* * Devise
-* * Heroku gems (will_paginate)
-* * Puma web server
-* * will_paginate
+** Devise
+** Heroku gems (will_paginate)
+** Puma web server
+** will_paginate
 
-## Todo
+## Heroku Demo (Feel free to use!)
+
+http://govapplication.herokuapp.com/
+
+## Implementation
+
+Ensure you have the following environment variable set: "SECRET_KEY_BASE" in production.
+
+##Todo
 
 * Render ajax error messages with rails ( http://stackoverflow.com/questions/13924650/render-error-messages-with-js-form-rails )
-* Build tests for basic task
-* * Guest cannot add/edit/delete items
-* * Guest see home page
-* * Signed in user cannot edit/delete items that aren't his/hers
-* * Signed in user cannot access other user's item
-
-## Done
-
-* Implement Devise
-* Build seed data for testing
-* Search field (concatenate title + content and removes accents ( foo.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').to_s )) 
-* Add form to add items (When adding items, ensure that the field "search"  is populate automatically 
-* Devises flash alert styling
-* Add controller/model for items (title / content ) with create/edit/destroy
-* * Style the list of items
-* Add Edit and Delete buttons when user mouse over one item
-* Add remote:true + javascript for delete button
-* Add code to make edit button work (hide text, show edit form)
-* Add remote:true for edit form, and make it work
-* Add remote:true for add form, and make it work
-* Make turbolinks not screw up jquery document ready scripts
-* Add Mangrill support for emails
-* Add search feature ( http://railscasts.com/episodes/240-search-sort-paginate-with-ajax?autoplay=true )
-* Test Mandrill emails
-* Make migration on heroku work
-* IL18n (translation fr)
+* Build tests for basic tasks
+* Guest cannot add/edit/delete items
+* Guest see home page
+* Signed in user cannot edit/delete items that aren't his/hers
+* Signed in user cannot access other user's item
