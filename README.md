@@ -28,6 +28,7 @@ http://govapplication.herokuapp.com/
 
 Ensure you have the following environment variable set: "SECRET_KEY_BASE" in production.
 You will also need to rename application.yml.example to application.yml and put your keys in there. As you can see I'm using sendgrid for since mandrill changed their TOS.
+If using heroku, make sure you used the following command figaro heroku:set -e production to ensure that figaro environment variables are set.
 
 ##Todo
 
